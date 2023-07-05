@@ -37,6 +37,7 @@ function handleAdd() {
     staffs.push(inputStaff);
   }
   renderStaffs(staffs);
+  document.querySelector(".input-new-staff").value = "";
 }
 
 // Function Edit Staffs

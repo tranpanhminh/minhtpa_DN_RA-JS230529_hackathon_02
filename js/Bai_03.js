@@ -13,7 +13,6 @@ let months = Number(prompt("Nhập số tháng bạn cần gửi: "));
 
 let total = bai_03(amount, months, 7);
 
-
 let inputAmount = document.querySelector(".input-amount");
 let inputTime = document.querySelector(".time");
 let fullAmount = document.querySelector(".full-amount");
@@ -21,4 +20,3 @@ let fullAmount = document.querySelector(".full-amount");
 inputAmount.innerHTML = amount;
 inputTime.innerHTML = months + " tháng";
 fullAmount.innerHTML = total;
-
