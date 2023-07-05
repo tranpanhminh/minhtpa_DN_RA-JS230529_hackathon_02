@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS chung */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    h2,
+    h3 {
+        margin: 10px 0px;
+        padding: 20px;
+    }
+
+    .search-section,
+    .add-staff-section,
+    .update-staff-section {
+        background-color: #F2F2F2;
+        padding: 30px;
+        width: 800px;
+        margin-left: 20px;
+        height: 100%;
+        text-align: center;
+    }
+
+    .update-staff-section {
+        display: none;
+    }
+
+    input {
+        padding: 10px 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+        border-radius: 5px;
+        border: 1px ridge #ccc;
+        height: 100%;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 85%;
+    }
+
+    table,
+    tr,
+    td {
+        padding: 20px 20px;
+    }
+
+    td:nth-child(2) {
+        margin-left: 40px;
+    }
+</style>
+
+<body>
+    <h2>Bài 5: Viết chương trình quản lý nhân viên Rikkei Academy</h2>
+    <h3>Thêm nhân viên</h3>
+    <div class="search-section">
+        <div class="inner-section">
+            <input type="text" placeholder="Search staff" class="input-search">
+            <button class="search-btn" onclick="handleSearch()">Search</button>
+        </div>
+    </div>
+    <br>
+    <div class="add-staff-section">
+        <div class="inner-section">
+            <input type="text" placeholder="Add Name staff" class="input-new-staff">
+            <button class="add-staff-btn" onclick="handleAdd()">Add</button>
+        </div>
+    </div>
+    <br>
+    <div class="update-staff-section">
+        <div class="inner-section">
+            <input type="text" placeholder="" class="index-staff" disabled>
+            <input type="text" placeholder="" class="old-name-staff">
+            <button class="add-staff-btn" onclick="handleUpdate()">Update</button>
+        </div>
+    </div>
+    <h3>Display All staff</h3>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">staff</th>
+                <th>3 staffs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sony Experia</td>
+                <td><button class="edit-btn">Edit</button></td>
+                <td><button class="delete-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Samsung Galaxy</td>
+                <td><button class="edit-btn">Edit</button></td>
+                <td><button class="delete-btn">Delete</button></td>
+            </tr>
+            <tr>
+                <td>Xiaomi Redmi Note 4</td>
+                <td><button class="edit-btn">Edit</button></td>
+                <td><button class="delete-btn">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./js/Bai_05.js"></script>
+</body>
+
+
+</html>
