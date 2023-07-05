@@ -183,18 +183,18 @@ function handleUpdate(i) {
 
 // Function Search
 function handleSearch() {
-  let students = JSON.parse(localStorage.getItem("students"));
+  let listStudents = JSON.parse(localStorage.getItem("students"));
   let searchResult = document.querySelector(".search-result");
   let inputSearch = document.querySelector(".input-search");
   let inputSearchValue = inputSearch.value.toLowerCase();
   console.log(inputSearchValue);
-  let filterStudent = students.filter(function (student) {
+  let filterStudent = listStudents.filter(function (student) {
     if (
       student.name.toLowerCase().includes(inputSearchValue) ||
       student.email.toLowerCase().includes(inputSearchValue) ||
       student.address.toLowerCase().includes(inputSearchValue) ||
       student.phone.toString().toLowerCase() === inputSearchValue ||
-      student.gender.toLowerCase().toLowerCase() === inputSearchValue
+      student.gender.toLowerCase().includes(inputSearchValue)
     ) {
       return true;
     }
