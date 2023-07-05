@@ -2,21 +2,21 @@ let students = [
   {
     name: "Nguyễn Văn A",
     email: "nguyenvan@gmail.com",
-    phone: "0123456789",
+    phone: "0909238653",
     address: "Hà Nội",
     gender: "Nam",
   },
   {
     name: "Trần Thị B",
     email: "tranthi@gmail.com",
-    phone: "98765442130",
+    phone: "0905218752",
     address: "Đà Nẵng",
     gender: "Nữ",
   },
   {
     name: "Lê Thị C",
     email: "lethi@gmail.com",
-    phone: "32132153254",
+    phone: "0905912643",
     address: "Quảng Nam",
     gender: "Nữ",
   },
@@ -183,6 +183,7 @@ function handleUpdate(i) {
 
 // Function Search
 function handleSearch() {
+  let students = JSON.parse(localStorage.getItem("students"));
   let searchResult = document.querySelector(".search-result");
   let inputSearch = document.querySelector(".input-search");
   let inputSearchValue = inputSearch.value.toLowerCase();
