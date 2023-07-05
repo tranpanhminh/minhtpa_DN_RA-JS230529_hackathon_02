@@ -207,15 +207,12 @@ function handleSearch() {
 // Function Sort
 
 function handleSort() {
-  // Get the table body
   const tableBody = document
     .getElementById("myTable")
     .getElementsByTagName("tbody")[0];
 
-  // Get all the rows in the table body
   const rows = tableBody.getElementsByTagName("tr");
 
-  // Sort the rows by the "Full name" column
   rows.sort((row1, row2) => {
     const name1 = row1.getElementsByTagName("td")[1].innerHTML;
     const name2 = row2.getElementsByTagName("td")[1].innerHTML;
